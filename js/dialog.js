@@ -1,6 +1,7 @@
 // Variáveis
 
 var conteudoForaDialog = document.querySelector('#conteudoForaDialog');
+var video = document.querySelector('video');
 var btnAbreDialog = document.querySelector('#abreDialog');
 var dialog = document.querySelector('.dialogNewsletter');
 var dialogBody = document.querySelector('.dialogNewsletter-body');
@@ -13,6 +14,7 @@ btnAbreDialog.addEventListener('click', function() {
   dialog.classList.add('dialogNewsletter--aberto');
   document.querySelector('.dialogNewsletter-campo').focus();
   conteudoForaDialog.inert = true;
+  video.removeAttribute('controls');
 });
 
 function fechandoDialog() {
@@ -20,6 +22,7 @@ function fechandoDialog() {
   dialog.classList.remove('dialogNewsletter--aberto');  
   conteudoForaDialog.inert = false;
   btnAbreDialog.focus();
+  video.setAttribute('controls');
 }
 
 // Listeners
