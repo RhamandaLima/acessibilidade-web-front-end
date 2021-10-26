@@ -6,9 +6,11 @@ var dialogOverlay = document.querySelector('.dialogNewsletter-overlay');
 
 btnAbreDialog.style.display = 'block';
 
+
 // Quando abrir a dialog...
 btnAbreDialog.addEventListener('click', function() {
   dialog.classList.add('dialogNewsletter--aberto');
+  document.querySelector('.dialogNewsletter-campo')
 });
 
 function fechandoDialog() {
