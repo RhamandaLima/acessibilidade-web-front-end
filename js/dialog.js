@@ -12,13 +12,14 @@ btnAbreDialog.style.display = 'block';
 btnAbreDialog.addEventListener('click', function() {
   dialog.classList.add('dialogNewsletter--aberto');
   document.querySelector('.dialogNewsletter-campo').focus();
-  conteudoForaDialog.inert = 'true';
+  conteudoForaDialog.inert = true;
 });
 
 function fechandoDialog() {
   document.activeElement.blur();
   dialog.classList.remove('dialogNewsletter--aberto');  
-  conteudoForaDialog.inert = 'false';   
+  conteudoForaDialog.inert = false;
+  btnAbreDialog.focus();
 }
 
 // Listeners
