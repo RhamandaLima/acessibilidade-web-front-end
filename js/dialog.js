@@ -22,7 +22,7 @@ function fechandoDialog() {
   dialog.classList.remove('dialogNewsletter--aberto');  
   conteudoForaDialog.inert = false;
   btnAbreDialog.focus();
-  video.setAttribute('controls');
+  video.setAttribute('controls', true);
 }
 
 // Listeners
