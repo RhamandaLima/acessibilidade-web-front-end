@@ -10,7 +10,7 @@ var dialogOverlay = document.querySelector('.dialogNewsletter-overlay');
 btnAbreDialog.style.display = 'block';
 
 // Quando abrir a dialog...
-btnAbreDialog.addEventListener('click', function() {
+btnAbreDialog.addEventListener('click', function () {
   dialog.classList.add('dialogNewsletter--aberto');
   document.querySelector('.dialogNewsletter-campo').focus();
   conteudoForaDialog.inert = true;
@@ -19,7 +19,7 @@ btnAbreDialog.addEventListener('click', function() {
 
 function fechandoDialog() {
   document.activeElement.blur();
-  dialog.classList.remove('dialogNewsletter--aberto');  
+  dialog.classList.remove('dialogNewsletter--aberto');
   conteudoForaDialog.inert = false;
   btnAbreDialog.focus();
   video.setAttribute('controls', true);
@@ -27,3 +27,11 @@ function fechandoDialog() {
 
 // Listeners
 document.querySelector('.dialogNewsletter-fechar').addEventListener('click', fechandoDialog);
+
+dialogOverlay.addEventListener('click', fechandoDialog);
+
+document.addEventListener('keydown', function (event) { 
+  if (event.key === 'Escape') { 
+    fechandoDialog(); 
+  } 
+})
