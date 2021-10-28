@@ -16,7 +16,7 @@ indicadorSlideAtual.textContent = '(Slide Atual)';
 btns.forEach(function(btn) {
   btn.addEventListener('click', function() {
 
-    document.querySelector('.listaDeArtigos-slider-item .escondeVisualmente').remove();
+    btn.href = 'javascript:void(0)';
 
     if(this.getAttribute('data-sliderItem') === '0') {
       new0.style.display = 'block';
@@ -33,7 +33,7 @@ btns.forEach(function(btn) {
     }
 
     document.querySelector('.listaDeArtigos-slider-item .escondeVisualmente').remove();
-    
+
     this.append(indicadorSlideAtual);
 
     // Remove classe 'ativo' dos outros botoes
