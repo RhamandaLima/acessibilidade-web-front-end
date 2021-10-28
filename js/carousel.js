@@ -6,6 +6,12 @@ var new2 = document.querySelector('#new2');
 
 new0.style.display = 'block';
 
+//Criando indicador de slide atual
+var indicadorSlideAtual = document.createElement('span');
+indicadorSlideAtual.classList.add('escondeVisualmente');
+indicadorSlideAtual.textContent = '(Slide Atual)';
+
+
 // Percorre todos os botoes controladores
 btns.forEach(function(btn) {
   btn.addEventListener('click', function() {
