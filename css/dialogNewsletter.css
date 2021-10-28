@@ -106,7 +106,7 @@
 }
 
 .dialogNewsletter-fechar:before {
-  content: url(../img/fechar.svg);
+  content: 'x';
   color: #666;
   width: 32px;
   height: 32px;
