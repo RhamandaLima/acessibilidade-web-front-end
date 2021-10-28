@@ -27,7 +27,7 @@ btns.forEach(function(btn) {
         noticia.style.display = 'block';
       }
 
-    })
+    }.bind(this));
 
     document.querySelector('.listaDeArtigos-slider-item .escondeVisualmente').remove();
 
