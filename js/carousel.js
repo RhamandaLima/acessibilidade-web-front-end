@@ -1,5 +1,7 @@
 //variáveis
 var btns = document.querySelectorAll('.listaDeArtigos-slider-item');
+var noticias = document.querySelectorAll('.listaDeArtigos-item');
+
 var new0 = document.querySelector('#new0');
 var new1 = document.querySelector('#new1');
 var new2 = document.querySelector('#new2');
@@ -18,15 +20,14 @@ btns.forEach(function(btn) {
 
     //btn.href = 'javascript:void(0)';
 
-    document.querySelectorAll('.listaDeArtigos-item').forEach(function(noticia) {
+    noticias.forEach(function(noticia) {
       noticia.style.display = 'none';
-    })
 
-    if(this.getAttribute('data-sliderItem') ) {
-      new0.style.display = 'block';
-      new1.style.display = 'none';
-      new2.style.display = 'none';
-    } 
+      if(this.getAttribute('data-sliderItem') === noticia.getAttribute('data-noticia')){
+        noticia.style.display = 'block';
+      }
+
+    })
 
     document.querySelector('.listaDeArtigos-slider-item .escondeVisualmente').remove();
 
