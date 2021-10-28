@@ -16,21 +16,17 @@ indicadorSlideAtual.textContent = '(Slide Atual)';
 btns.forEach(function(btn) {
   btn.addEventListener('click', function() {
 
-    btn.href = 'javascript:void(0)';
+    //btn.href = 'javascript:void(0)';
 
-    if(this.getAttribute('data-sliderItem') === '0') {
+    document.querySelectorAll('.listaDeArtigos-item').forEach(function(noticia) {
+      noticia.style.display = 'none';
+    })
+
+    if(this.getAttribute('data-sliderItem') ) {
       new0.style.display = 'block';
       new1.style.display = 'none';
       new2.style.display = 'none';
-    } else if (this.getAttribute('data-sliderItem') === '1') {
-      new0.style.display = 'none';
-      new1.style.display = 'block';
-      new2.style.display = 'none';
-    } else {
-      new0.style.display = 'none';
-      new1.style.display = 'none';
-      new2.style.display = 'block';
-    }
+    } 
 
     document.querySelector('.listaDeArtigos-slider-item .escondeVisualmente').remove();
 
