@@ -5,5 +5,7 @@ campoCep.oninvalid = function() {
 
     if(!this.validity.valid){
         this.setCustomValidity('Ops! Tem algo errado neste campo.');
+        
+        this.parentNode.classList.add('contatoCampo--erro')
     }
 }
