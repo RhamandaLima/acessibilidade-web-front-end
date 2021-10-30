@@ -1,3 +1,9 @@
-var campoCep = document.querySelector('$cep');
+var campoCep = document.querySelector('#cep');
 
-console.log(campoCep);
+campoCep.oninvalid = function() {
+    this.setCustomValidity('');
+
+    if(!this.validity.valid){
+        this.setCustomValidity('Ops! Tem algo errado neste campo.');
+    }
+}
