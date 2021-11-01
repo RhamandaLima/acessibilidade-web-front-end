@@ -337,7 +337,6 @@
           </h2>
 
           <form class="secaoContato-form">
-
             <fieldset>
               <legend class="secaoContato-form-legend">
                 Oi, tudo bem? Fale com a gente!
@@ -347,48 +346,49 @@
               <div class="contatoCampo contatoCampo--sucesso">
                 <label for="nome">Nome: </label>
                 <input type="text" id="nome" class="contatoCampo--validouFoi" placeholder="Nome..." required value="Natan Souza">
-              </div>
+              </div>  
 
-              <div class="contatoCampo contatoCampo--erro">
+              <div class="contatoCampo">
                 <label for="email">Email: </label>
-                <input type="email" id="email" class="contatoCampo--validouErro" placeholder="Email.." required value="contato@alura.com.br">
-                <span id="sugestao" class="contatoCampo-msg contatoCampo-msg--erro"></span>
+                <input type="email" id="email" placeholder="Email.." required value="contato@gnail.com">
+                <span id="sugestao" class="contatoCampo-msg contatoCampo-msg--erro">   
+                           </span>
               </div>
 
               <div class="contatoCampo contatoCampo--erro">
                 <label for="telefone">Telefone: </label>
                 <input type="text" class="contatoCampo--validouErro" placeholder="(11) 5571-2751" id="telefone">
                 <span class="contatoCampo-msg contatoCampo-msg--erro">Faltou o DDD</span>
-              </div>
+              </div>     
 
               <div class="contatoCampo">
                 <label for="cep">CEP: </label>
-                <input type="text" maxlength="8" id="cep" placeholder="Exemplo: 04101-300" required value="60762-000">
+                <input id="cep" type="text" maxlength="8" placeholder="Exemplo: 04101-300" required value="04101300">
               </div>
 
               <div class="contatoCampo">
                 <label for="endereco">Endereço: </label>
-                <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro" id="endereco">
-              </div>
+                <input id="endereco" type="text" class="contatoCampo-campoDesabilitado" readonly value="Rua Vergueiro">
+              </div>   
 
               <div class="contatoCampo">
                 <label for="bairro">Bairro: </label>
-                <input type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana" id="bairro">
-              </div>
+                <input id="bairro" type="text" class="contatoCampo-campoDesabilitado" readonly value="Vila Mariana">
+              </div>   
 
               <div class="contatoCampo">
                 <label for="cidade">Cidade: </label>
-                <input type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo" id="cidade">
-              </div>
+                <input id="cidade" type="text" class="contatoCampo-campoDesabilitado" readonly value="São Paulo">
+              </div>   
 
               <div class="contatoCampo">
                 <label for="estado">Estado: </label>
-                <input type="text" class="contatoCampo-campoDesabilitado" readonly value="SP" id="estado">
-              </div>
+                <input id="estado" type="text" class="contatoCampo-campoDesabilitado" readonly value="SP">
+              </div>   
 
               <div class="contatoCampo">
                 <label for="mensagem">Mensagem: </label>
-                <textarea name="" cols="30" rows="10" required id="mensagem">lorem ipsum</textarea>
+                <textarea id="mensagem" name="" cols="30" rows="10" required>lorem ipsum</textarea>
               </div>
 
               <div class="contatoCampo">
@@ -406,11 +406,9 @@
               </div>
             </fieldset>
           </form>
-        </div>
-        <!--fim .container da .secaoContato-->
+        </div> <!--fim .container da .secaoContato-->
 
-      </section>
-      <!--fim .secaoContato-->
+      </section> <!--fim .secaoContato-->
 
 
       <section class="secaoInstitucional">
