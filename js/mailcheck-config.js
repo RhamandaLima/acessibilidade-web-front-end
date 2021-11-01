@@ -1,22 +1,23 @@
-var domains = ['gmail.com', 'aol.com'];
+var domains = ['gmail.com', 'aol.com', 'outlook.com', 'alura.com.br'];
 var secondLevelDomains = ['hotmail']
-var topLevelDomains = ["com", "net", "org"];
+var topLevelDomains = ["com", "net", "org", "br"];
 
-var superStringDistance = function(string1, string2) {
-  // a string distance algorithm of your choosing
+var superStringDistance = function (string1, string2) {
+    // a string distance algorithm of your choosing
 }
 
-$('#email').on('blur', function() {
-  $(this).mailcheck({
-    domains: domains,                       // optional
-    secondLevelDomains: secondLevelDomains, // optional
-    topLevelDomains: topLevelDomains,       // optional
-    distanceFunction: superStringDistance,  // optional
-    suggested: function(element, suggestion) {
-      // callback code
-    },
-    empty: function(element) {
-      // callback code
-    }
-  });
+document.querySelector('#email').addEventListener('blur', function () {
+    Mailcheck.run({
+        email: yourTextInput.value,
+        domains: domains,                       // optional
+        topLevelDomains: topLevelDomains,       // optional
+        secondLevelDomains: secondLevelDomains, // optional
+        distanceFunction: superStringDistance,  // optional
+        suggested: function (suggestion) {
+            // callback code
+        },
+        empty: function () {
+            // callback code
+        }
+    });
 });
