@@ -115,6 +115,15 @@
 
 ## Resultados
 
+<div align="center">
+<p><b>Resultado geral</b></p>
+<img src="img/capa-2.gif" width="800px"/>
+</div>
+
+<div align="center">
+<p><br><b>Resultado com NVDA</b></p>
+<img src="img/nvda.gif" width="800px"/>
+</div>
 
 ## Status do projeto
 
