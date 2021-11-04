@@ -26,7 +26,7 @@
 - Baixa visão;
 - Deficiência física.
 
-<p>Além disso, a importância da implementação da acessibilidade se dá em virtude de que se trata de um nicho do mercado que infelizmente não é explorado pelos grandes portais, mesmo que 25% da população brasileira possua algum tipo de deficiência. Ademais, é necessário que haja a conscientização de que, em algum momento, todas as pessoas possuirão alguma limitação, sendo assim, é necessário que tenhamos <b>empatia</b> como uma ótima ferramenta no desenvolvimento de qualquer atividade.</p>
+<p>Além disso, a importância da implementação da acessibilidade se dá em virtude de que se trata de um nicho do mercado que infelizmente não é explorado pelos grandes portais, ainda que 25% da população brasileira possua algum tipo de deficiência. Ademais, é necessário que haja a conscientização de que, em algum momento, todas as pessoas possuirão alguma limitação, sendo assim, é necessário que tenhamos <b>empatia</b> como uma ótima ferramenta no desenvolvimento de qualquer atividade.</p>
 
 <p>Outro ponto interessante abordado pelo curso foram as Diretrizes de Acessibilidade para Conteúdo Web (WCAG) disponíveis no site <a href="https://www.w3.org/Translations/WCAG20-pt-br/">W3</a>.</p>
 
@@ -61,7 +61,7 @@
 - Redução dos < h1 > em seções independentes, posto que alguns leitores podem se perder mesmo com a utilização de um leitor de tela;
 - Maior cuidado com a marcação de conteúdo quando utilizamos elementos HTML5;
 - Realização de testes e mais testes para tornar o projeto inclusivo e colocarmos em prática a empatia; 
-- Cuidado com o sotaque. Para isso, devemos alterar o < html lang="en" > para pt-br e assim facilitar a compreensão do conteúdo para o usuário deficiente visual. Além disso, se precisamos que um fragmento de código seja lido em um idioma específico, teremos de inserir o atributo leng e acionar a opção atribuindo o idioma;
+- Cuidado com o sotaque. Para isso, devemos alterar o < html lang="en" > para pt-br e assim facilitar a compreensão do conteúdo para o usuário deficiente visual. Além disso, se precisamos que um fragmento de código seja lido em um idioma específico, teremos que inserir o atributo leng e acionar a opção atribuindo o idioma;
 - No que diz respeito ao alt, aprendemos que toda imagem que possui valor informacional precisa ter um bom apoio textual. Precisamos ser bem descritivos, com acentuação correta e evitar generalismos;
 - Colocar o elemento < title > em SVGs que forem inline (código direto no HTML);
 - Declaração da "list-style:none" no CSS para que o leitor de tela não leia o ícone ao ler cada item de uma lista;
@@ -79,6 +79,30 @@
     <img src="img/curso3.png" width=500px alt="Acessibilidade Web parte 2: componentes acessíveis com um pouco de JavaScript."/>
 </p>
 
+<p>O conteúdo deste curso é totalmente focado em Front-end e JavaScript.</p>
+
+**Aprendizado do curso:**
+
+- Como tornar os botões mais acessíveis passando as informações através da implementação do < span >;
+- Plugin Emmet; 
+- Alt vazio (ou alt="") para apontar uma informação irrelevante, sendo apenas ilustrativo;
+- Melhorias de acessibilidade do modal; 
+- Implementação do atributo Inert através de uma lib; 
+- Retirando o foco inconveniente; 
+- role="dialog" em janelas pop-up para o leitor de tela anunciar que foi aberta uma janela do tipo dialog/modal; 
+- Fechar a modal/dialog ao apertar a tecla "Esc";
+- Ajustes para que seja possível fechar a janela modal quando o usuário clicar em uma área externa a ela;
+- Depois que o usuário clicar em algum botão, quando isto faz com que apareça uma janela ou haja outra interação, ele deve retornar ao ponto em que estava;
+- Aplicação para que o botão que abre a janela seja exibido somente quando o JavaScript estiver habilitado com btnAbreDialog.style.display = 'block';
+- A partir de role="dialog" na classe dialogNewsletter em index.html, quando se abre o modal, o NVDA lê "News sem spam", pois foi rotulado com o h2;
+- No CSS, vimos que no content, o :after e o :before impactam diretamente no uso do leitor de telas, e por conta disto foi utilizado o aria-label;
+- Melhorias na acessibilidade do carousel, que pode ter os componentes alterados apenas com CSS puro, mas isto às vezes pode comprometer a acessibilidade; 
+- Melhorias no formulário de contato, em que foi validado o campo para CEP;
+- Inclusão de mensagens de erro personalizadas e sugestões quando há erros de digitação; e
+- No mesmo formulário, foi alterado o checkbox para que ele fosse identificado pelo leitor de telas.
+
+<hr>
+
 ## Tecnologias 
 
 - [Figma](https://www.figma.com/)
@@ -90,3 +114,8 @@
 <hr>
 
 ## Resultados
+
+
+## Status do projeto
+
+**Concluído.**
